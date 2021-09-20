@@ -22,22 +22,22 @@ const routes = [
   {
     'path': '/brazil',
     'name': 'brazil',
-    'component': () => import('../views/Brazil.vue')
+    'component': () => import(/* webpackChunkName: 'brazil' */ '../views/Brazil.vue')
   },
   {
     'path': '/panama',
     'name': 'panama',
-    'component': () => import('../views/Panama.vue')
+    'component': () => import(/* webpackChunkName: 'panama' */ '../views/Panama.vue')
   },
   {
     'path': '/hawaii',
     'name': 'hawaii',
-    'component': () => import('../views/Hawaii.vue')
+    'component': () => import(/* webpackChunkName: 'hawaii' */ '../views/Hawaii.vue')
   },
   {
     'path': '/jamaica',
     'name': 'jamaica',
-    'component': () => import('../views/Jamaica.vue')
+    'component': () => import(/* webpackChunkName: 'jamaica' */ '../views/Jamaica.vue')
   }
 ];
 
