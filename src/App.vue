@@ -34,7 +34,7 @@ export default {
   padding: 0 10px;
 }
 
-#nav a.router-link-exact-active {
-  color: red;
+#nav a.vue-school-active-class {
+  color: purple;
 }
 </style>
