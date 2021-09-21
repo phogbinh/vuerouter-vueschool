@@ -38,6 +38,11 @@ const routes = [
     'path': '/jamaica',
     'name': 'jamaica',
     'component': () => import(/* webpackChunkName: 'jamaica' */ '../views/Jamaica.vue')
+  },
+  {
+    'path': '/details',
+    'name': 'DestinationDetails',
+    'component': () => import(/* webpackChunkName: 'DestinationDetails' */ '../views/DestinationDetails.vue')
   }
 ];
 
