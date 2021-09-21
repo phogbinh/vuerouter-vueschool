@@ -1,3 +1,3 @@
 <template>
-  <h2>hello details</h2>
+  <h2>The destination is: {{ this['$route']['params']['id'] }}</h2>
 </template>
