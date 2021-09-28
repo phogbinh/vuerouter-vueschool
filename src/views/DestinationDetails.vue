@@ -14,13 +14,13 @@ import store from '@/store.js'
 export default {
   'data': function() {
     return {
-      'destinationId': this['$route']['params']['id']
+      'destinationSlug': this['$route']['params']['slug']
     }
   },
   'computed': {
     'destination': function() {
       return store['destinations'].find(
-        destination => destination['id'] === this['destinationId']
+        destination => destination['slug'] === this['destinationSlug']
       )
     }
   }
