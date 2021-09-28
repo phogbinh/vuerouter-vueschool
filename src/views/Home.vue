@@ -45,4 +45,12 @@ img {
   display: flex;
   justify-content: space-between;
 }
+a {
+  color: lightseagreen;
+  text-decoration: none;
+}
+a:hover,
+a:visited {
+  text-decoration: underline;
+}
 </style>
