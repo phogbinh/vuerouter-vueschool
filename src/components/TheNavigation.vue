@@ -20,7 +20,6 @@ import store from '@/store.js'
 export default {
   'data': function() {
     return {
-      'destinationId': this['$route']['params']['id'],
       'destinations': store['destinations']
     } 
   }
