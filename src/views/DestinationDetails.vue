@@ -74,7 +74,7 @@ p {
   padding: 0 20px;
   position: relative;
 }
-.card__text {
+.card-text {
   position: absolute;
   top: 50%;
   left: 50%;
