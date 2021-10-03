@@ -10,7 +10,7 @@
     <section class='experiences'>
       <h2>Top experiences in {{ destination['name'] }}</h2>
       <div class='cards'>
-        <div v-for='experience in experiences'
+        <div v-for='experience in destination["experiences"]'
         :key='experience["slug"]'
         class='card'>
           <img :src='require(`@/assets/${experience["image"]}`)'
