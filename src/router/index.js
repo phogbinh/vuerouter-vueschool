@@ -38,7 +38,8 @@ const routes = [
     }
   },
   {
-    'path': '*',
+    'path': '/404',
+    'alias': '*',
     'name': 'notFound',
     'component': () => import(/* webpackChunkName: 'NotFound' */ '../views/NotFound.vue')
   }
