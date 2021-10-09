@@ -48,6 +48,18 @@ const routes = [
 const router = new VueRouter({
   'mode': 'history',
   'linkExactActiveClass': 'vue-school-active-class',
+  'scrollBehavior': function(to, from, savedPosition) {
+    if (savedPosition) {
+      return savedPosition
+    }
+    else {
+      const position = {}
+      if (to['hash']) {
+        position['selector'] = to['hash']
+        return false
+      }
+    }
+  },
   routes,
 });
 
