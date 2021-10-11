@@ -56,6 +56,9 @@ const router = new VueRouter({
       const position = {}
       if (to['hash']) {
         position['selector'] = to['hash']
+        if (document.querySelector(to['hash'])) {
+          return position
+        }
         return false
       }
     }
