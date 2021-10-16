@@ -23,7 +23,7 @@ export default {
   'methods': {
     'login': function() {
       store['user'] = this['username']
-      this['$route'].push('/user')
+      this['$router'].push('/user')
     }
   }
 }
