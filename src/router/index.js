@@ -90,7 +90,8 @@ router.beforeEach((to, from, next) => {
   if (to['matched'].some(record => record['meta']['requiresAuth'])) {
     if (!store['user']) {
       next({
-        'name': 'login'
+        'name': 'login',
+        'query': { 'redirect': to['fullPath'] }
       })
     }
     else {
