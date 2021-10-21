@@ -49,6 +49,12 @@ const routes = [
     'component': () => import(/* webpackChunkName: 'Login' */ '../views/Login.vue')
   },
   {
+    'path': '/invoices',
+    'name': 'invoices',
+    'component': () => import(/* webpackChunkName: 'Invoices' */ '../views/Invoices.vue'),
+    'meta': { 'requiresAuth': true }
+  },
+  {
     'path': '/404',
     'alias': '*',
     'name': 'notFound',
